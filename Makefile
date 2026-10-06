@@ -1,5 +1,7 @@
 # Build for srccomplexity
 
+all : srccomplexity srcMLXPathCountTest
+
 srccomplexity : srcComplexity.o srcMLXPathCount.o
 	g++ srcComplexity.o srcMLXPathCount.o -lxml2 -o srccomplexity
 
